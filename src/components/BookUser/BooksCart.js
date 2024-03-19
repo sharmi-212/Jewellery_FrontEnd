@@ -18,7 +18,7 @@ const BooksCart = (props) => {
   };
 
   const sendRequest = async (newCartStatus) => {
-    await axios.put(`https://appliances-be.onrender.com/books/${_id}`, {
+    await axios.put(`https://jewellery-backend-or7c.onrender.com/books/${_id}`, {
       name: String(name),
       description: String(description),
       price: Number(price),
