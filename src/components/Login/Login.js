@@ -90,7 +90,7 @@ function LoginPage() {
 
     // Add authentication logic here (e.g., check credentials)
     try {
-      const response = await axios.post('https://appliances-be.onrender.com/users/login', { email, password, isAdmin });
+      const response = await axios.post('https://jewellery-backend-or7c.onrender.com/users/login', { email, password, isAdmin });
 
       // Check the response status or data for success or errors
       if (response.status === 200) {
