@@ -11,7 +11,7 @@ const UpdateBook = () => {
     useEffect(() => {
         const fetchHandler = async () => {
             await axios
-                .get(`https://appliances-be.onrender.com/books/${id}`)
+                .get(`https://jewellery-backend-or7c.onrender.com/books/${id}`)
                 .then((res) => res.data)
                 .then((data) => setInputs(data.book));
         };
@@ -20,7 +20,7 @@ const UpdateBook = () => {
 
     const sendRequest = async () => {
         await axios
-            .put(`https://appliances-be.onrender.com/books/${id}`, {
+            .put(`https://jewellery-backend-or7c.onrender.com/books/${id}`, {
                 name: String(inputs.name),
                 idno: String(inputs.idno),
                 description: String(inputs.description),
