@@ -18,7 +18,7 @@ const Cart = () => {
   // Fetch books from the server
   const fetchBooks = async () => {
     try {
-      const response = await axios.get(`https://appliances-be.onrender.com/books`);
+      const response = await axios.get(`https://jewellery-backend-or7c.onrender.com/books`);
       setBooks(response.data.books);
     } catch (error) {
       console.error("Error fetching books:", error);
@@ -28,7 +28,7 @@ const Cart = () => {
   //fetch the user Id to add cart books 
   const fetchUserId = async () => {
     try {
-      const response = await axios.get(`https://appliances-be.onrender.com/users`);
+      const response = await axios.get(`https://jewellery-backend-or7c.onrender.com/users`);
       const userData = response.data;
 
       const filteredUser = userData.find((profile) => profile.email === Cookies.get("email"));
@@ -60,7 +60,7 @@ const Cart = () => {
     const putRequests = filteredBooks.map(async (book) => {
       const { _id, name, idno, description, price,stock, image } = book; // Extract the book properties, excluding the 'id'
       
-      await axios.put(`https://appliances-be.onrender.com/books/${_id}`, {
+      await axios.put(`https://jewellery-backend-or7c.onrender.com/books/${_id}`, {
           name: name,
           idno: idno,
           description: description,
@@ -100,7 +100,7 @@ const Cart = () => {
       }
 
       // Send the entire pastOrders array to the backend
-      await axios.put(`https://appliances-be.onrender.com/users/${user._id}`, {
+      await axios.put(`https://jewellery-backend-or7c.onrender.com/users/${user._id}`, {
         pastOrders: pastOrders,
       });
   
@@ -112,7 +112,7 @@ const Cart = () => {
  
  const sendRequest = async () => {
   try {
-    const response = await axios.post("https://appliances-be.onrender.com/checkout", {
+    const response = await axios.post("https://jewellery-backend-or7c.onrender.com/checkout", {
       items: filteredBooks,
       subtotal: subtotal.toFixed(2),
     });
