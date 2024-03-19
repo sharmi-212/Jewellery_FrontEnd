@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./BookAdmin.css"
 import axios from 'axios'
 import BookAdmin from "./BookAdmin"
-const URL = "https://appliances-be.onrender.com/books";
+const URL = "https://jewellery-backend-or7c.onrender.com/books";
 
 
 const fetchHandler = async() => {
