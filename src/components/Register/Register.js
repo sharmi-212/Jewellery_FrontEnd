@@ -123,7 +123,7 @@ function RegistrationPage() {
     }
 
     try {
-      const response = await axios.post('https://appliances-be.onrender.com/users/register', {
+      const response = await axios.post('https://jewellery-backend-or7c.onrender.com/users/register', {
         name,
         email,
         password,
