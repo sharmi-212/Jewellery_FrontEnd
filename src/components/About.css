@@ -1,0 +1,154 @@
+/* About.css */
+
+/* Style for the main heading */
+.text-bblue {
+    font-size: 40px;
+    color:  black;
+    text-align: center;
+  }
+  
+  /* Style for the container */
+  
+  
+  /* Style for the images within the grid */
+  .grid img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s, background-color 0.5s;
+  }
+  
+  /* Style for the headings within the grid */
+  .grid .font-bold {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Add more custom styles as needed */
+  /* Container div */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+  
+  /* Image card container */
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .hover-shadow-xl:hover {
+    box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.1), 0 10px 14px 1px rgba(0, 0, 0, 0.07), 0 4px 18px 3px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* Image */
+  .w-full {
+    width: 100%;
+  }
+  
+  .transform {
+    transform: scale(1);
+    transition: transform 0.5s;
+  }
+  
+  .h-64 {
+    height: 16rem;
+  }
+  
+  .bg-blue-400 {
+    background-color: #e142d6;
+  }
+  
+  .hover-bg-blue-600:hover {
+    background-color:  #e142d6;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  /* Card content */
+  .px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .py-9 {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+  
+  /* Card title */
+  .font-bold {
+    font-weight: 700;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem;
+  }
+  
+  .mb-2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Tags */
+  .inline-block {
+    display: inline-block;
+  }
+  
+  .bg-gray-200 {
+    background-color: #e2e8f0;
+  }
+  
+  .rounded-full {
+    border-radius: 9999px;
+  }
+  
+  .px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  
+  .py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+  
+  .text-sm {
+    font-size: 0.875rem;
+  }
+  
+  .font-semibold {
+    font-weight: 600;
+  }
+  
+  .text-gray-700 {
+    color: #4a5568;
+  }
+  
+  /* Margin classes */
+  .mr-2 {
+    margin-right: 0.5rem;
+  }
+  
+  .mb-2 {
+    margin-bottom: 0.5rem;
+  }
+  /* Equivalent plain CSS for the specified Tailwind CSS classes */
+
+/* Normal font-weight (400) */

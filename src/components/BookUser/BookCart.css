@@ -1,0 +1,63 @@
+/* BookCart.css */
+
+.cart-card {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cart-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cart-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.cart-details {
+  padding: 15px;
+}
+
+.cart-details h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+.cart-details p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0 0 10px 0;
+}
+
+.cart-details h3,
+.cart-details article {
+  margin: 0;
+}
+
+.remove-button {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+.add-button {
+  background-color: #5cb85c;
+  color: #fff;
+}
+
+.add-button:disabled {
+  background-color: #ccc;
+  color: #888;
+  cursor: not-allowed;
+}
