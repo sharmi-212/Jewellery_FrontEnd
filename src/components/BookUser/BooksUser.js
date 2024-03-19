@@ -4,7 +4,7 @@ import axios from 'axios';
 import BookUser from "./BookUser";
 import "./book.css";
 
-const URL = "https://appliances-be.onrender.com/books";
+const URL = "https://jewellery-backend-or7c.onrender.com/books";
 
 const fetchHandler = async () => {
     return await axios.get(URL).then((res) => res.data);
